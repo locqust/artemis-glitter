@@ -37,3 +37,18 @@ exports.proximity = function(req, res){
 exports.tubes = function(req, res){
 	res.render('tubes', { title: 'Torpedo Tubes - Artemis Glitter' });
 };
+
+
+/*
+ * GET Internal comms screen.
+ */
+exports.intcomms = function(req, res){
+	res.render('intcomms', { title: 'Internal Comms - Artemis Glitter' });
+};
+
+/*
+ * GET Captains display matrix.
+ */
+exports.captab = function(req, res){
+	res.render('captab', { title: 'Captains display matrix - Artemis Glitter' });
+};
