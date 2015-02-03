@@ -1,0 +1,186 @@
+@charset "utf-8";
+#Main {
+	font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype')
+	color: #FFFFFF;
+	font-size: 36px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	
+}
+
+.button {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype')
+  color: #ffffff;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  padding: 10px 10px;
+  text-decoration: none;
+  border: inset 3px #15C5FF;
+}
+
+.btnBlue1 {
+  background: #005AB3;
+}
+.btnBlue2 {
+  background: #003A72;
+}
+.btnRed1 {
+  background: #FC0202;
+  color: #000000;
+}
+.btnRed2 {
+  background: #A40C0C;
+  color: #000000;
+}
+.btnBlue1down{
+  background: #ffffff;
+  color: #000000;
+}
+.btnBlue2down{
+  background: #ffffff;
+  color: #000000;
+}
+.btnRed1down{
+  background: #a31502;
+  color: #000000;
+}
+.btnRed2down{
+  background: #a31502;
+  color: #000000;
+}
+.btnCollapse {
+  display: none;
+}
+
+.animated { 
+   -webkit-animation-duration: 1s; 
+   animation-duration: 1s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInLeft { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInLeft { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+.fadeInLeft { 
+    -webkit-animation-name: fadeInLeft; 
+    animation-name: fadeInLeft; 
+}
+
+.animatedflash { 
+   -webkit-animation-duration: 1s; 
+   animation-duration: 1s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+   animation-iteration-count:20;
+   -webkit-animation-iteration-count:20;
+} 
+
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+.flash { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+} 
+
+.animatedstaticbuttons1 { 
+   -webkit-animation-duration: 6s; 
+   animation-duration: 6s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+   -webkit-animation-timing-function: ease-in-out; 
+   animation-timing-function: ease-in-out; 
+   animation-iteration-count:infinite; 
+   -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+.flash1 { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+}
+
+.animatedstaticbuttons2 { 
+   -webkit-animation-duration: 3s; 
+   animation-duration: 3s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+   -webkit-animation-timing-function: ease-in-out; 
+   animation-timing-function: ease-in-out; 
+   animation-iteration-count:infinite; 
+   -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+.flash2 { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+}
+
+.animatedstaticbuttons3 { 
+   -webkit-animation-duration: 8s; 
+   animation-duration: 8s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+   -webkit-animation-timing-function: ease-in-out; 
+   animation-timing-function: ease-in-out; 
+   animation-iteration-count:infinite; 
+   -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+.flash3 { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+}
