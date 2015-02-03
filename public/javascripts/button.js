@@ -13,7 +13,7 @@ $(function() {
 	
 	$("#shuttle1button3").click(function() {
 		$(this).addClass("btnCollapse");
-		$("#shuttle1button2");
+		$("#shuttle1button4").removeClass("btnCollapse");
 		//alert("Button Click 4");
 	});
 	
