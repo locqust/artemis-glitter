@@ -1,21 +1,21 @@
 
 @font-face {
-	font-family: 'Xolonium';
-        src: url('/fonts/Xolonium-Bold.otf') format('opentype');
+	font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Xolonium';
-        src: url('/fonts/Xolonium-Regular.otf') format('opentype');
+	font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 body {
-	font: 15px "Xolonium", "Lucida Grande", Helvetica, Arial, sans-serif;
-	background: #003;	/* Artemis' science dark blue */
+	font: 15px "Trek_TNG_Monitors_0", "Lucida Grande", Helvetica, Arial, sans-serif;
+	background: black;	/* Artemis' science dark blue */
 	color: #ccc;
 	overflow: hidden;
 	margin:0; padding:0;
