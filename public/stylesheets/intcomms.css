@@ -1,0 +1,84 @@
+
+
+table#intcomms
+{
+	font-size:200%;
+	font-size: 4vw;
+	
+	
+}
+
+table#intcomms th, table#intcomms td {
+/* 	padding: 0 1ex; */
+}
+
+table#intcomms td {
+	text-align: center;
+}
+
+table#intcomms td div.load,
+table#intcomms td div.fire,
+table#intcomms td div.loading,
+table#intcomms td div.unloading,
+table#intcomms td div.wait, 
+table#intcomms td div.switch,
+table#intcommstd div.empty
+{
+	font-size:75%;
+	width:5em;
+	cursor:pointer;
+}
+
+table#intcomms td div.load
+{
+	border:3px solid #33c;
+	border:.5vmin solid #33c;
+	background: #336;
+}
+
+table#intcomms td div.fire
+{
+	border:3px solid #3c3;
+	border:.5vmin solid #3c3;
+	background: #363;
+}
+
+table#intcomms td div.loading
+{
+	border:3px solid #ccc;
+	border:.5vmin solid #ccc;
+	background: #666;
+}
+
+table#intcomms td div.unloading
+{
+	border:3px solid #ccc;
+	border:.5vmin solid #ccc;
+	background: #666;
+}
+
+table#intcomms td div.wait
+{
+	border:3px solid #ccc;
+	border:.5vmin solid #ccc;
+	background: #663;
+}
+
+table#intcomms td div.switch
+{
+	border:3px solid #cc3;
+	border:.5vmin solid #cc3;
+	background: #663;
+}
+
+table#intcomms td div.empty
+{
+	border:3px solid #333;
+	border:.5vmin solid #333;
+	background: #000;
+/* 	font-size:60%; */
+}
+
+
+
+
