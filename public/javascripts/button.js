@@ -3,6 +3,10 @@ $(function() {
 	$("#shuttle1button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle1button2").removeClass("btnCollapse").addClass("animatedflash flash");
+			var e = jQuery.Event("keypress");
+	e.keyCode = 97;
+    $("#shuttle1button1").trigger(e);
+	console.log(1);
 		setTimeout(function() {
 			$("#shuttle1button2").addClass("btnCollapse");
 			$("#shuttle1button3").removeClass("btnCollapse");
@@ -12,19 +16,16 @@ $(function() {
      addSource(audio, 'voice/keyok4.ogg');
      audio.appendTo('body');
 		}, 20000);
-		//alert("Button Click 1");
 	});
 	
-	//$("#shuttle1button2").click(function() {
-		//$(this).addClass("btnCollapse");
-		//$("#shuttle1button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttle1button3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttle1button3").removeClass("animatedflash3secs flash3secs");
+		$("#shuttle1button3").addClass("btnCollapse");
 		$("#shuttle1button4").removeClass("btnCollapse");
 		//alert("Button Click 4");
+		}, 3000);
 	});
 	
 	$("#shuttle1button4").click(function() {
@@ -48,16 +49,14 @@ $(function() {
 	//alert("Button Click 1");
 	});
 	
-	//$("#shuttle2button2").click(function() {
-	//	$(this).addClass("btnCollapse");
-	//	$("#shuttle2button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttle2button3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttle2button3").removeClass("animatedflash3secs flash3secs");
+		$("#shuttle2button3").addClass("btnCollapse");
 		$("#shuttle2button4").removeClass("btnCollapse");
-		//alert("Button Click 3");
+		//alert("Button Click 4");
+		}, 3000);
 	});
 	
 	$("#shuttle2button4").click(function() {
@@ -81,16 +80,14 @@ $(function() {
 		//alert("Button Click 1");
 	});
 	
-	//$("#shuttle3button2").click(function() {
-	//	$(this).addClass("btnCollapse");
-	//	$("#shuttle3button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttle3button3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttle3button3").removeClass("animatedflash3secs flash3secs");
+		$("#shuttle3button3").addClass("btnCollapse");
 		$("#shuttle3button4").removeClass("btnCollapse");
-		//alert("Button Click 3");
+		//alert("Button Click 4");
+		}, 3000);
 	});
 	
 	$("#shuttle3button4").click(function() {
@@ -114,16 +111,14 @@ $(function() {
 		//alert("Button Click 1");
 	});
 	
-	//$("#shuttle4button2").click(function() {
-	//	$(this).addClass("btnCollapse");
-	//	$("#shuttle4button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttle4button3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttle4button3").removeClass("animatedflash3secs flash3secs");
+		$("#shuttle4button3").addClass("btnCollapse");
 		$("#shuttle4button4").removeClass("btnCollapse");
-		//alert("Button Click 3");
+		//alert("Button Click 4");
+		}, 3000);
 	});
 	
 	$("#shuttle4button4").click(function() {
@@ -147,16 +142,14 @@ $(function() {
 		//alert("Button Click 1");
 	});
 	
-	//$("#shuttle5button2").click(function() {
-	//	$(this).addClass("btnCollapse");
-	//	$("#shuttle5button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttle5button3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttle5button3").removeClass("animatedflash3secs flash3secs");
+		$("#shuttle5button3").addClass("btnCollapse");
 		$("#shuttle5button4").removeClass("btnCollapse");
-		//alert("Button Click 3");
+		//alert("Button Click 4");
+		}, 3000);
 	});
 	
 	$("#shuttle5button4").click(function() {
@@ -200,35 +193,33 @@ $(function() {
 	//alert("Button Click 1");
 	});
 	
-	//$("#shuttleallbutton2").click(function() {
-	//	$(this).addClass("btnCollapse");
-	//	$("#shuttleallbutton3").removeClass("btnCollapse");
-	//	$("#shuttle1button2").addClass("btnCollapse");
-	//	$("#shuttle1button3").removeClass("btnCollapse");
-	//	$("#shuttle2button2").addClass("btnCollapse");
-	//	$("#shuttle2button3").removeClass("btnCollapse");
-	//	$("#shuttle3button2").addClass("btnCollapse");
-	//	$("#shuttle3button3").removeClass("btnCollapse");
-	//	$("#shuttle4button2").addClass("btnCollapse");
-	//	$("#shuttle4button3").removeClass("btnCollapse");
-	//	$("#shuttle5button2").addClass("btnCollapse");
-	//	$("#shuttle5button3").removeClass("btnCollapse");
-		//alert("Button Click 2");
-	//});
-	
 	$("#shuttleallbutton3").click(function() {
-		$(this).addClass("btnCollapse");
+		$(this).addClass("animatedflash3secs flash3secs");
+		$("#shuttle1button3").addClass("animatedflash3secs flash3secs");
+		$("#shuttle2button3").addClass("animatedflash3secs flash3secs");
+		$("#shuttle3button3").addClass("animatedflash3secs flash3secs");
+		$("#shuttle4button3").addClass("animatedflash3secs flash3secs");
+		$("#shuttle5button3").addClass("animatedflash3secs flash3secs");
+		setTimeout(function() {
+		$("#shuttleallbutton3").addClass("btnCollapse");
+		$("#shuttleallbutton3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttleallbutton4").removeClass("btnCollapse");
+		$("#shuttle1button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle1button3").addClass("btnCollapse");
 		$("#shuttle1button4").removeClass("btnCollapse");
+		$("#shuttle2button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle2button3").addClass("btnCollapse");
 		$("#shuttle2button4").removeClass("btnCollapse");
+		$("#shuttle3button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle3button3").addClass("btnCollapse");
 		$("#shuttle3button4").removeClass("btnCollapse");
+		$("#shuttle4button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle4button3").addClass("btnCollapse");
 		$("#shuttle4button4").removeClass("btnCollapse");
+		$("#shuttle5button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle5button3").addClass("btnCollapse");
 		$("#shuttle5button4").removeClass("btnCollapse");
+		}, 3000);
 		//alert("Button Click 3");
 	});
 	
@@ -248,11 +239,6 @@ $(function() {
 		//alert("Button Click 4");
 	});
 	
-	$("#RedAlertTrigger").click(function() {
-		$(".button").toggleClass("btnBlue1 btnBlue2 btnBlue1down btnBlue2down");
-		$(".button").toggleClass("btnRed1 btnRed2 btnRed1down btnRed2down");
-	});
-	
 	$("#abandonship1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#abandonship2").removeClass("btnCollapse");
@@ -262,9 +248,15 @@ $(function() {
 	
 	$("#abandonship2").click(function() {
 		$(this).addClass("btnCollapse");
-		$("#abandonship1").removeClass("btnCollapse");
+		$("#abandonship1").removeClass("btnCollapse animated fadeInLeft");
+		$("#selfdestruct1").addClass("animatedfadeoutright fadeOutRight");
+		$("#selfdestruct2").addClass("animatedfadeoutright fadeOutRight");
+		setTimeout(function() {
+		$("#selfdestruct1").removeClass("animatedfadeoutright fadeOutRight");
 		$("#selfdestruct1").addClass("btnCollapse");
+		$("#selfdestruct2").removeClass("animatedfadeoutright fadeOutRight");
 		$("#selfdestruct2").addClass("btnCollapse");
+		}, 1000);
 		//alert("Button Click abandon");
 	});
 	
@@ -338,14 +330,49 @@ $(function() {
 	
 	$("#transporter2").click(function() {
 		$(this).addClass("btnCollapse");
-		$("#transporter1").removeClass("btnCollapse");
+		$("#transporter1").removeClass("btnCollapse animated fadeInLeft");
+		$("#alertmeds").addClass("animatedfadeoutright fadeOutRight");
+		$("#alertmeds2").addClass("animatedfadeoutright fadeOutRight");
+		$("#notifyship1").addClass("animatedfadeoutright fadeOutRight");
+		$("#notifyship2").addClass("animatedfadeoutright fadeOutRight");
+		$("#awayteam1").addClass("animatedfadeoutright fadeOutRight");
+		$("#awayteam2").addClass("animatedfadeoutright fadeOutRight");
+		setTimeout(function() {
+		$("#alertmeds").removeClass("animatedfadeoutright fadeOutRight");
 		$("#alertmeds").addClass("btnCollapse");
+		$("#alertmeds2").removeClass("animatedfadeoutright fadeOutRight");
 		$("#alertmeds2").addClass("btnCollapse");
+		$("#notifyship1").removeClass("animatedfadeoutright fadeOutRight");
 		$("#notifyship1").addClass("btnCollapse");
+		$("#notifyship2").removeClass("animatedfadeoutright fadeOutRight");
 		$("#notifyship2").addClass("btnCollapse");
+		$("#awayteam1").removeClass("animatedfadeoutright fadeOutRight");
 		$("#awayteam1").addClass("btnCollapse");
+		$("#awayteam2").removeClass("animatedfadeoutright fadeOutRight");
 		$("#awayteam2").addClass("btnCollapse");
 		$("#chips").removeClass("btnCollapse");
 		$("#monkey").removeClass("btnCollapse");
+		}, 1000);
 	});
+	
+		$("#RedAlertTrigger").click(function() {
+		$(".button").toggleClass("btnBlue1").toggleClass("btnRed1");
+		$(".button").toggleClass("btnBlue2").toggleClass("btnRed2");
+		$("#menu-curve-a").toggleClass("btnCollapse");
+		$("#menu-curve-a-red").toggleClass("btnCollapse");
+		$("#menu-bar1").toggleClass("btnCollapse");
+		$("#menu-bar1-red").toggleClass("btnCollapse");
+		$("#long-bar1").toggleClass("btnCollapse");
+		$("#long-bar1-red").toggleClass("btnCollapse");
+		$("#short-bar1").toggleClass("btnCollapse");
+		$("#short-bar1-red").toggleClass("btnCollapse");
+		$("#short-bar2").toggleClass("btnCollapse");
+		$("#short-bar2-red").toggleClass("btnCollapse");
+		$("#short-bar3").toggleClass("btnCollapse");
+		$("#short-bar3-red").toggleClass("btnCollapse");
+		//$(".btnRed1").toggleClass("btnRed1").toggleClass("btnBlue1");
+		//$(".btnRed2").toggleClass("btnRed2").toggleClass("btnBlue2");
+		//$(".button").toggleClass("btnRed1 btnRed2 btnRed1down btnRed2down");
+	});
+	
 });

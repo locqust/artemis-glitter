@@ -78,6 +78,8 @@ app.get('/map',           routes.map);
 app.get('/bearing-table', routes.bearingTable);
 app.get('/proximity',     routes.proximity);
 app.get('/tubes',         routes.tubes);
+app.get('/intcomms',         routes.intcomms);
+app.get('/captab',         routes.captab);
 
 
 
@@ -207,6 +209,11 @@ app.get('/fire-tube/:tube', function(req,res){
 app.get('/load-tube/:tube/:ordnance', function(req,res){
 	// This expects a tube from 1 to 6, but the server expects a tube from 0 to 5
 	artemisNet.emit('loadTube', {tube:req.params.tube-1, ordnance: req.params.ordnance});
+	res.end();
+});
+app.get('/keypress/:key', function(req,res){
+	// Hopefully this should act like a keyboard press to the server
+	artemisNet.emit('Keystroke', {key: String.fromkeyCode});
 	res.end();
 });
 

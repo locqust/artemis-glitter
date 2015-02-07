@@ -8,7 +8,7 @@ $("#shuttle1button1").click(function(){
        autoPlay : 'autoplay'
      });
      addSource(audio, 'voice/keyok2.ogg');
-     audio.appendTo('body');     
+     audio.appendTo('body'); 	 
 });
 
 $("#shuttle1button2").click(function(){

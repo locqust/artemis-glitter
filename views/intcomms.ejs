@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+<title>Communications - Glitter</title>
+<% include layout.ejs -%>
+<link href="/stylesheets/style-lcars.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/lcars.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -15,7 +16,8 @@
   <tbody>
     <tr>
       <td><div><div align="left">COMMUNICATIONS</div></td>
-      <td><div><div align="left" class="animated fadeInLeft" id="long-bar1"><img src="/images/long-bar.png" width="90%" height="32" alt=""/></div></td>
+      <td><div><div align="left" class="animated fadeInLeft" id="long-bar1"><img src="/images/long-bar.png" width="90%" height="32" alt=""/></div>
+	 <div align="left" class="btnCollapse" id="long-bar1-red"><img src="/images/long-bar-red.png" width="90%" height="32" alt=""/></div></td>
     </tr>
   </tbody>
 </table>
@@ -23,11 +25,13 @@
       <div id="Buttons"><table width="100%" height="100%" border="0">
   <tbody>
     <tr>
-      <td width="288"><div><div class="animated fadeInLeft" id="menu-curve-a"><img src="/images/menu-curve-a.png" width="288" height="183"/><img src="/images/menu-curve-b.png" width="100%" height="107"/></div></td>
+      <td width="288"><div><div class="animated fadeInLeft" id="menu-curve-a"><img src="/images/menu-curve-a.png" width="288" height="183"/><img src="/images/menu-curve-b.png" width="100%" height="107"/></div>
+	 <div class="btnCollapse" id="menu-curve-a-red"><img src="/images/menu-curve-a-red.png" width="288" height="183"/><img src="/images/menu-curve-b-red.png" width="100%" height="107"/></div></td>
       <td><table width=100%" height="100%" border="0">
   <tbody>
     <tr>
-      <td height="32"><div><div class="animated fadeInLeft" id="short-bar1"><img src="/images/short-bar.png" align="top" width="100%" height="32" alt=""/></div></td>
+      <td height="32"><div><div class="animated fadeInLeft" id="short-bar1"><img src="/images/short-bar.png" align="top" width="100%" height="32" alt=""/></div>
+	 <div class="btnCollapse" id="short-bar1-red"><img src="/images/short-bar-red.png" align="top" width="100%" height="32" alt=""/></div></td>
     </tr>
     <tr>
       <td height="95%"><table width="100%" border="0">
@@ -78,7 +82,8 @@
       <td><table width="100%" height="100%" border="0">
   <tbody>
     <tr>
-      <td height="32"><div><div class="animated fadeInLeft" id="short-bar2"><img src="/images/short-bar.png" align="top" width="100%" height="32" alt=""/></div></td>
+      <td height="32"><div><div class="animated fadeInLeft" id="short-bar2"><img src="/images/short-bar.png" align="top" width="100%" height="32" alt=""/></div>
+	 <div class="btnCollapse" id="short-bar2-red"><img src="/images/short-bar-red.png" align="top" width="100%" height="32" alt=""/></div></td>
     </tr>
     <tr>
       <td height="95%"><table width="100%" border="0">
@@ -108,7 +113,8 @@
   <tbody>
     <tr>
       <td height="32"><div><div class="animated fadeInLeft" id="short-bar3"><img src="/images/short-bar.png" align="top" width="100%" height="32" alt=""/></div>
-	</td>
+	 <div class="btnCollapse" id="short-bar3-red"><img src="/images/short-bar-red.png" align="top" width="100%" height="32" alt=""/></div>
+</td>
     </tr>
     <tr>
       <td height="95%"><table width="100%" border="0">
@@ -136,7 +142,8 @@
 	  </td>
     </tr>
 <tr>
-<td width="288"><div><div class="animated fadeInLeft" id="menu-bar1"><img src="/images/menu-bar1.png" width="142" height="275" alt=""/><img src="/images/menu-blank.png" width="144" height="138" alt=""/></div></td>
+<td width="288"><div><div class="animated fadeInLeft" id="menu-bar1"><img src="/images/menu-bar1.png" width="142" height="275" alt=""/><img src="/images/menu-blank.png" width="144" height="138" alt=""/></div>
+<div class="btnCollapse" id="menu-bar1-red"><img src="/images/menu-bar1-red.png" width="142" height="275" alt=""/><img src="/images/menu-blank.png" width="144" height="138" alt=""/></div></td>
 <td><table width="100%" border="0">
 <tbody>
     <tr>
@@ -214,8 +221,12 @@
     </div>
   </section>
 </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/worldmodel.js"></script>
+<script src="/javascripts/connectionlost.js"></script>
  <script src="/javascripts/jquery-1.10.2.min.js"></script>
   <script src="/javascripts/button.js"></script>
   <script src="/javascripts/button-click.js"></script>
 </body>
 </html>
+

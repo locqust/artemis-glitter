@@ -1,0 +1,88 @@
+
+@font-face {
+	font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trek_TNG_Monitors_0';
+        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font: 30px "Trek_TNG_Monitors_0", "Lucida Grande", Helvetica, Arial, sans-serif;
+	background: black;	/* LCARS black */
+	color: #ccc;
+	overflow: hidden;
+	margin:0; padding:0;
+/*   width:15em; */
+}
+
+* {
+	border-width: 5px;
+	border-width: 1vmin;
+}
+
+a {
+	color: #9cc;
+}
+
+
+
+/* The connection status overlay. */
+#connected {
+	display:none;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0,0,50,0.9);
+	padding:5%;
+	
+	z-index:100000;
+}
+
+#connected #gameOverTitle {
+	text-align: center;
+}
+
+#connected #gameOverReason {
+	text-align: center;
+/* 	font-size: 3vh; */
+}
+
+table#gameOverStats td ,
+table#gameOverStats th {
+/* 	font-size: 3vh; */
+	width: inherit;
+	padding: 0 1em;
+	text-align: right;
+}
+table#gameOverStats {
+	width:auto;
+}
+
+/* Border and background for all <div>s */
+
+div,ul,li {
+	margin: 15px;
+	margin: 1vmin;
+}
+
+/*div {
+	background: #001933;
+	
+	border: solid #036;
+	
+	padding:5px;
+	padding:1vmin;
+}*/
+
+
+
+
