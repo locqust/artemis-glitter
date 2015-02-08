@@ -5,8 +5,12 @@ $(function() {
 		$("#shuttle1button2").removeClass("btnCollapse").addClass("animatedflash flash");
 			var e = jQuery.Event("keypress");
 	e.keyCode = 97;
-    $("#shuttle1button1").trigger(e);
-	console.log(1);
+    $("shuttle1button1").trigger(e);
+	console.log(e);
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./keypress/"+e, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 			$("#shuttle1button2").addClass("btnCollapse");
 			$("#shuttle1button3").removeClass("btnCollapse");
@@ -355,24 +359,24 @@ $(function() {
 		}, 1000);
 	});
 	
-		$("#RedAlertTrigger").click(function() {
-		$(".button").toggleClass("btnBlue1").toggleClass("btnRed1");
-		$(".button").toggleClass("btnBlue2").toggleClass("btnRed2");
-		$("#menu-curve-a").toggleClass("btnCollapse");
-		$("#menu-curve-a-red").toggleClass("btnCollapse");
-		$("#menu-bar1").toggleClass("btnCollapse");
-		$("#menu-bar1-red").toggleClass("btnCollapse");
-		$("#long-bar1").toggleClass("btnCollapse");
-		$("#long-bar1-red").toggleClass("btnCollapse");
-		$("#short-bar1").toggleClass("btnCollapse");
-		$("#short-bar1-red").toggleClass("btnCollapse");
-		$("#short-bar2").toggleClass("btnCollapse");
-		$("#short-bar2-red").toggleClass("btnCollapse");
-		$("#short-bar3").toggleClass("btnCollapse");
-		$("#short-bar3-red").toggleClass("btnCollapse");
+		//$("#RedAlertTrigger").click(function() {
+		//$(".button").toggleClass("btnBlue1").toggleClass("btnRed1");
+		//$(".button").toggleClass("btnBlue2").toggleClass("btnRed2");
+		//$("#menu-curve-a").toggleClass("btnCollapse");
+		//$("#menu-curve-a-red").toggleClass("btnCollapse");
+		//$("#menu-bar1").toggleClass("btnCollapse");
+		//$("#menu-bar1-red").toggleClass("btnCollapse");
+		//$("#long-bar1").toggleClass("btnCollapse");
+		//$("#long-bar1-red").toggleClass("btnCollapse");
+		//$("#short-bar1").toggleClass("btnCollapse");
+		//$("#short-bar1-red").toggleClass("btnCollapse");
+		//$("#short-bar2").toggleClass("btnCollapse");
+		//$("#short-bar2-red").toggleClass("btnCollapse");
+		//$("#short-bar3").toggleClass("btnCollapse");
+		//$("#short-bar3-red").toggleClass("btnCollapse");
 		//$(".btnRed1").toggleClass("btnRed1").toggleClass("btnBlue1");
 		//$(".btnRed2").toggleClass("btnRed2").toggleClass("btnBlue2");
 		//$(".button").toggleClass("btnRed1 btnRed2 btnRed1down btnRed2down");
-	});
+	//});
 	
 });
