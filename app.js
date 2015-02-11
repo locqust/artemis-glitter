@@ -125,7 +125,7 @@ function grabStations() {
 // 	artemisNet.emit('setStation', {station:2, selected:1}); // Weap
 // 	artemisNet.emit('setStation', {station:3, selected:1}); // Engine
 // 	artemisNet.emit('setStation', {station:4, selected:1}); // Sci
-// 	artemisNet.emit('setStation', {station:5, selected:1}); // Comms
+ 	artemisNet.emit('setStation', {station:5, selected:1}); // Comms
 // 	artemisNet.emit('setStation', {station:6, selected:1}); // Data
 	artemisNet.emit('setStation', {station:7, selected:1}); // Observ
 // 	artemisNet.emit('setStation', {station:8, selected:1}); // Capt
@@ -211,9 +211,9 @@ app.get('/load-tube/:tube/:ordnance', function(req,res){
 	artemisNet.emit('loadTube', {tube:req.params.tube-1, ordnance: req.params.ordnance});
 	res.end();
 });
-app.get('/keypress/:e', function(req,res){
+app.get('/KeystrokePacket/:keyCode', function(req,res){
 	// Hopefully this should act like a keyboard press to the server
-	artemisNet.emit('sendKeystroke', {e:req.params.e});
+	artemisNet.emit('KeystrokePacket', {keyCode:req.params.keyCode});
 	res.end();
 });
 

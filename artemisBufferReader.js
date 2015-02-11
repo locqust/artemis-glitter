@@ -104,7 +104,7 @@ artemisBufferReader.prototype.writeShort = function(data) {
 };
 
 artemisBufferReader.prototype.writeLong = function(data) {
-	var number = this.buffer.writeUInt32LE(data,this.pointer);
+	var number = this.buffer.writeUInt32LE(data,this.pointer, true);
 	this.pointer += 4;
 	return number;
 };

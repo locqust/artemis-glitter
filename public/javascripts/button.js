@@ -3,12 +3,12 @@ $(function() {
 	$("#shuttle1button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle1button2").removeClass("btnCollapse").addClass("animatedflash flash");
-			var e = jQuery.Event("keypress");
-	e.keyCode = 97;
-    $("shuttle1button1").trigger(e);
-	console.log(e);
+	//var keyCode = jQuery.Event("keypress");
+     var keyCode = (97);
+  //  $("shuttle1button1").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
 	var oReq = new XMLHttpRequest();
-		oReq.open("get", "./keypress/"+e, true);
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
 		oReq.send();
 		console.log(oReq);
 		setTimeout(function() {

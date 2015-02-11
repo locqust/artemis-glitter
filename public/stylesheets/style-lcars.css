@@ -1,20 +1,20 @@
 
 @font-face {
-	font-family: 'Trek_TNG_Monitors_0';
-        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
+	font-family: 'Xolonium';
+        src: url('/fonts/Xolonium-Bold.otf') format('opentype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Trek_TNG_Monitors_0';
-        src: url('/fonts/Trek_TNG_Monitors_0.ttf') format('truetype');
+	font-family: 'Xolonium';
+        src: url('/fonts/Xolonium-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 body {
-	font: 30px "Trek_TNG_Monitors_0", "Lucida Grande", Helvetica, Arial, sans-serif;
+	font: 30px "Xolonium", "Lucida Grande", Helvetica, Arial, sans-serif;
 	background: black;	/* LCARS black */
 	color: #ccc;
 	overflow: hidden;
