@@ -24,6 +24,13 @@ $(function() {
 	
 	$("#shuttle1button3").click(function() {
 		$(this).addClass("animatedflash3secs flash3secs");
+		var keyCode = (97);
+  //  $("shuttle1button3").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 		$("#shuttle1button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle1button3").addClass("btnCollapse");
@@ -35,12 +42,26 @@ $(function() {
 	$("#shuttle1button4").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle1button1").removeClass("btnCollapse animated fadeInLeft");
+		var keyCode = (97);
+  //  $("shuttle1button4").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		//alert("Button Click 4");
 	});
 	
 	$("#shuttle2button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle2button2").removeClass("btnCollapse").addClass("animatedflash flash");
+		var keyCode = (98);
+  //  $("shuttle2button1").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 			$("#shuttle2button2").addClass("btnCollapse");
 			$("#shuttle2button3").removeClass("btnCollapse");
@@ -55,6 +76,13 @@ $(function() {
 	
 	$("#shuttle2button3").click(function() {
 		$(this).addClass("animatedflash3secs flash3secs");
+		var keyCode = (98);
+  //  $("shuttle2button3").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 		$("#shuttle2button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle2button3").addClass("btnCollapse");
@@ -66,12 +94,26 @@ $(function() {
 	$("#shuttle2button4").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle2button1").removeClass("btnCollapse animated fadeInLeft");
+		var keyCode = (98);
+  //  $("shuttle2button4").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		//alert("Button Click 4");
 	});
 	
 	$("#shuttle3button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle3button2").removeClass("btnCollapse").addClass("animatedflash flash");
+		var keyCode = (99);
+  //  $("shuttle3button1").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 			$("#shuttle3button2").addClass("btnCollapse");
 			$("#shuttle3button3").removeClass("btnCollapse");
@@ -86,6 +128,13 @@ $(function() {
 	
 	$("#shuttle3button3").click(function() {
 		$(this).addClass("animatedflash3secs flash3secs");
+		var keyCode = (99);
+  //  $("shuttle3button3").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 		$("#shuttle3button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle3button3").addClass("btnCollapse");
@@ -97,12 +146,26 @@ $(function() {
 	$("#shuttle3button4").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle3button1").removeClass("btnCollapse animated fadeInLeft");
+		var keyCode = (99);
+  //  $("shuttle3button4").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		//alert("Button Click 4");
 	});
 	
 	$("#shuttle4button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle4button2").removeClass("btnCollapse").addClass("animatedflash flash");
+		var keyCode = (100);
+  //  $("shuttle4button1").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 			$("#shuttle4button2").addClass("btnCollapse");
 			$("#shuttle4button3").removeClass("btnCollapse");
@@ -117,6 +180,13 @@ $(function() {
 	
 	$("#shuttle4button3").click(function() {
 		$(this).addClass("animatedflash3secs flash3secs");
+			var keyCode = (100);
+  //  $("shuttle4button3").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 		$("#shuttle4button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle4button3").addClass("btnCollapse");
@@ -128,12 +198,26 @@ $(function() {
 	$("#shuttle4button4").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle4button1").removeClass("btnCollapse animated fadeInLeft");
+			var keyCode = (100);
+  //  $("shuttle4button4").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		//alert("Button Click 4");
 	});
 	
 	$("#shuttle5button1").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle5button2").removeClass("btnCollapse").addClass("animatedflash flash");
+			var keyCode = (101);
+  //  $("shuttle5button1").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 			$("#shuttle5button2").addClass("btnCollapse");
 			$("#shuttle5button3").removeClass("btnCollapse");
@@ -148,6 +232,13 @@ $(function() {
 	
 	$("#shuttle5button3").click(function() {
 		$(this).addClass("animatedflash3secs flash3secs");
+			var keyCode = (101);
+  //  $("shuttle5button3").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		setTimeout(function() {
 		$("#shuttle5button3").removeClass("animatedflash3secs flash3secs");
 		$("#shuttle5button3").addClass("btnCollapse");
@@ -159,6 +250,13 @@ $(function() {
 	$("#shuttle5button4").click(function() {
 		$(this).addClass("btnCollapse");
 		$("#shuttle5button1").removeClass("btnCollapse animated fadeInLeft");
+			var keyCode = (101);
+  //  $("shuttle5button4").trigger(keyCode);
+	console.log("key " + keyCode  + " has been pressed");
+	var oReq = new XMLHttpRequest();
+		oReq.open("get", "./KeystrokePacket/"+keyCode, true);
+		oReq.send();
+		console.log(oReq);
 		//alert("Button Click 4");
 	});
 	

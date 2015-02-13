@@ -213,7 +213,7 @@ app.get('/load-tube/:tube/:ordnance', function(req,res){
 });
 app.get('/KeystrokePacket/:keyCode', function(req,res){
 	// Hopefully this should act like a keyboard press to the server
-	artemisNet.emit('KeystrokePacket', {keyCode:req.params.keyCode});
+	artemisNet.emit('KeystrokePacket', {keyCode:parseInt(req.params.keyCode)});
 	res.end();
 });
 

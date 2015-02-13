@@ -7,7 +7,7 @@ exports.subtypeLength = 4;	// 4 bytes -> UInt32LE
 
 exports.pack = function(writer, data) {
 	writer.writeLong(data.keyCode);
-	console.log("we've emitted " +data);
+	console.log(data);
 }
 
 exports.unpack = null;	// Only from client to server
